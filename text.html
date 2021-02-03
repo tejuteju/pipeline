@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<script>
+	function show() {
+		const c=["red","green","blue","white","black","yellow"];
+		const c1=c[Math.floor(Math.random()*c.length)];
+		const p=document.getElementById("p").style;
+		p.color=c1;
+	}
+	window.addEventListener("load",show,false)
+</script>
+</head>
+<body>
+	<p id="p">Hello everyone in CSS477</p>	
+</body>
+</html>

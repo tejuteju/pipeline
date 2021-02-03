@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+	function myFunction() {
+	  var str = prompt("enter a string or '***' to quit");
+	  while(true){
+		if(str!='***'){
+			var c = str.match(/[aeiou]/gi).length;
+			document.getElementById("demo").innerHTML +=
+			"Count of vowels in "+str+" is: "+ c+"\n";
+			var str = prompt("enter a string or '***' to quit");
+		}
+		else
+		{
+			alert('Thanks for using the vowel counter');
+			break;
+		}
+	  }
+	}
+</script>
+<html>
+	<body>
+		<button onclick="myFunction()">Press Button</button><br/><br/>
+		<textarea id="demo" rows='10',cols='30'></textarea>
+	</body>
+</html>
